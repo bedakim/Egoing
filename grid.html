@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      * {
+        margin: 2px;
+      }
+      div {
+        border: 2px solid black;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+      }
+      .a {
+        background-color: blueviolet;
+      }
+      .b {
+        background-color: red;
+      }
+      .c {
+        background-color: yellow;
+      }
+      #d {
+        border: 2px ridge blue;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d">
+      <div class="a">왼쪽</div>
+      <div class="b">중앙</div>
+      <div class="c">오른쪽</div>
+    </div>
+    <div>별도</div>
+  </body>
+</html>

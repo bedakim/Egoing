@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>행맨!</h1>
+    <script>
+      let words = [
+        "javascript",
+        "hello",
+        "monkey",
+        "react",
+        "nodejs",
+        "css",
+        "words"
+      ];
+
+      let word = words[Math.floor(Math.random() * words.length)];
+
+      let answerArr = [];
+      for (let i = 0; i < word.length; i++) {
+        answerArr[i] = "_/";
+      }
+      let remainLetters = word.length;
+
+      while (remainLetters > 0) {
+        alert(answerArr.join(""));
+
+        let guess = prompt("입력해");
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("한글자만 입력해");
+        } else {
+          for (let j = 0; j < word.length; j++) {
+            if (word[j] === guess) {
+              answerArr[j] = guess;
+              remainLetters--;
+            }
+          }
+        }
+      }
+      alert(answerArr.join(""));
+      alert("good이야" + word + "이다");
+    </script>
+  </body>
+</html>

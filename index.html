@@ -4,52 +4,42 @@
     <title>WEB-Node.js</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      h1 {
-        border-bottom: 5px solid salmon;
-        padding-bottom: 10px;
-      }
-      ol {
-        border-right: 5px solid rebeccapurple;
-      }
-      .a1 {
-        color: red;
-      }
-      div {
-        display: grid;
-        grid-template-columns: 130px 1fr;
-        background-image: linear-gradient(rgb(50, 91, 205), rgb(21, 255, 0));
-      }
-      img {
-        margin-top: 30px;
-        box-shadow: 10px 10px rebeccapurple;
-      }
-    </style>
+    <link href="style.css" rel="stylesheet" />
+    <style></style>
   </head>
   <body>
     <h1><a href="HelloWorld.html">KBO</a></h1>
+    <input
+      type="button"
+      value="day"
+      onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        "
+    />
+    <input
+      type="button"
+      value="night"
+      onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black'; 
+        "
+    />
     <div>
-      <div class="asdf">
-        <ol>
-          <li><a class="a1" href="2.html">Lotte Giants</a></li>
-          <li><a class="a1" href="2.html">Lg Twins</a></li>
-          <li><a class="a1" href="2.html">Doosan Bears</a></li>
-          <li><a class="a1" href="2.html">Kt Wiz</a></li>
-          <li><a class="a1" href="2.html">Samsung Lions</a></li>
-        </ol>
-      </div>
+      <ol>
+        <li><a class="a1" href="2.html">Lotte Giants</a></li>
+        <li><a class="a1" href="2.html">Lg Twins</a></li>
+        <li><a class="a1" href="2.html">Doosan Bears</a></li>
+        <li><a class="a1" href="2.html">Kt Wiz</a></li>
+        <li><a class="a1" href="2.html">Samsung Lions</a></li>
+      </ol>
+
       <div class="asd">
         <h2>Lotte Giants</h2>
-        <span>
-          Lotte Giants Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Corrupti corporis quisquam eveniet labore cumque modi nemo, ab aliquid
-          dolorem, odio placeat delectus totam laboriosam! Maxime cum aut
-          repellat deleniti illo.
-        </span>
+        Lotte Giants Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Corrupti corporis quisquam eveniet labore cumque modi nemo, ab aliquid
+        dolorem, odio placeat delectus totam laboriosam! Maxime cum aut repellat
+        deleniti illo.
       </div>
     </div>
     <img src="/base.jpg.jpg" width="70%" />
@@ -65,5 +55,6 @@
       <li>신본기</li>
       <li>안중열</li>
     </ol>
+    <script></script>
   </body>
 </html>
